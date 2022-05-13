@@ -1,4 +1,4 @@
-# Multilingual Knowledge Graph Completion with Self-Supervised \\ Adaptive Graph Alignment
+# Multilingual Knowledge Graph Completion with Self-Supervised  Adaptive Graph Alignment
 
 Paper Arxiv: https://arxiv.org/abs/2203.14987
 
