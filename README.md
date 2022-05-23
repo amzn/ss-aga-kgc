@@ -54,7 +54,7 @@ There are some key options of this scrips:
 
 The details of other optional hyperparameters can be found in run_model.py.
 
-## License
+## Citation
 
 Please consider citing the following paper when using our code for your application.
 
