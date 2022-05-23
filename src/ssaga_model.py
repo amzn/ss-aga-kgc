@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 from src.gnn import GNN
-import src.param as param
 from src.utils import nodes_to_graph, Ranking_all_batch,subgrarph_list_from_alignment
 import torch.nn.functional as F
 import numpy as np
