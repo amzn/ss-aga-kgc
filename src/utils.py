@@ -23,6 +23,20 @@ def save_model(model, output_dir, filename, args):
         'args': args,
     }, ckpt_path)
 
+def get_negative_samples_alignment(batch_size_each, num_entity,num_negative=None):
+    '''
+    Generate one negative sample
+    :param batch_size_each:
+    :param num_entity:
+    :return:
+    '''
+    if num_negative == None:
+        rand_negs = torch.randint(high=num_entity, size=(batch_size_each,))  # [b,n]
+    else:
+        rand_negs = torch.randint(high=num_entity, size=(batch_size_each,num_negative))  # [b,n]
+
+    return rand_negs
+
 
 def load_model(ckpt_path, model, device):
     if not os.path.exists(ckpt_path):
