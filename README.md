@@ -11,7 +11,7 @@ This implementation of SS-AGA is based on [Pytorch Geometric](https://github.com
 
 **DBP-5L**:  A Public dataset from  https://github.com/stasl0217/KEnS.
 
-**E-PKG**: A new industrial multilingual E-commerce product KG dataset. (To be released.)
+**E-PKG**: A new industrial multilingual E-commerce product KG dataset. 
 
 Data format: Each dataset contains the following files and folders:
 
@@ -19,7 +19,7 @@ Data format: Each dataset contains the following files and folders:
 - kg: Folder that contains the KG triple list (head_entity_index, relation_index, tail_entity_index) for each kg.
 - seed_alignlinks: Folder that contains seed entity alignment pair list between two KGs. 
 - relation.txt: File that contains relation that is shared across all KGs.
-- entity_embeddings.npy: The numpy file of mbert embedding for each entity from all KGs. Size of [Num_entity_all, 768]. We use the **BERT-Base, Multilingual Cased**  from https://github.com/google-research/bert/blob/master/multilingual.md to generate it. You can download the entity_embeddings.npy for ther DBP-5L dataset from [here](https://drive.google.com/file/d/1-R_2lqS5AQtWqLZXC45SrfkK5XETREe5/view?usp=sharing).
+- entity_embeddings.npy: The numpy file of mbert embedding for each entity from all KGs. Size of [Num_entity_all, 768]. We use the **BERT-Base, Multilingual Cased**  from https://github.com/google-research/bert/blob/master/multilingual.md to generate it. You can download the entity_embeddings.npy for ther DBP-5L dataset from [here](https://drive.google.com/file/d/1-R_2lqS5AQtWqLZXC45SrfkK5XETREe5/view?usp=sharing) and for thhe E-PKG data from [here](https://drive.google.com/file/d/1sO0YQRkr93JLq2S3OP_WNgxMsSr6Yjgw/view?usp=sharing) .
 
 To run the code, create the folders "dataset/dbp5l",  "dataset/epkg" and download the two datasets respectively.
 
@@ -70,4 +70,4 @@ Adaptive Graph Alignment},
 
 ## License
 
-This project is licensed under the Apache-2.0 License.
+This project is licensed under the Apache-2.0 License and CDLA-Permissive 2.0 license.
